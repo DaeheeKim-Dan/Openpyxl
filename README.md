@@ -14,3 +14,5 @@ o002 : NamedCellControl.py
 				     defNames=wb.defined_names.definedName
 				     defNames[i].name
 				     list(defNames[i].destinations)
+o003 : TransactionSheet.py
+        master  : 거래명세서 양식서 로드하여 거래날짜 정보 입력.
