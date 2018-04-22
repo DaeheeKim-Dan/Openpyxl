@@ -3,7 +3,7 @@ import openpyxl as ox
 from openpyxl import Workbook
 
 
-def style_cell(ws, cell_range, border=Border(), alignment=None):
+def style_cell(ws, cell_range, border, alignment=None):
     top = Border(top=border.top)
     left = Border(left=border.left)
     right = Border(right=border.right)
@@ -19,7 +19,7 @@ def style_cell(ws, cell_range, border=Border(), alignment=None):
         cell.border = cell.border + bottom + right
 
         
-def style_range(ws, cell_range, border=Border(), alignment=None):
+def style_range(ws, cell_range, border, alignment=None):
     """
     Apply styles to a range of cells as if they were a single cell.
 
